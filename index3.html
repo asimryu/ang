@@ -19,6 +19,7 @@
 				$scope.friends = json.data;
 			});
 			$scope.findfriend = function(name,sch){
+				//대소문자 가리기 위해 "" 사용함.
 				return (""+name).indexOf(""+sch) > -1;
 			};
 		});
